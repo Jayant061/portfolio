@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about{
+    padding: 30px 50px;
+    color: #0c344d;
+    background-color: #0c344d10;
+
+}
+.about h2{
+    margin-bottom: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 2px solid #0c344d;
+}
+.about p{
+    font-size: 17px;
+    padding-bottom: 5px;
+    color: rgb(2, 2, 88);
+}
+.intro, .careerHeading,.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.academicCareer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.academic{
+    flex-basis: 33%;
+    margin: 20px;
+    border:none;
+    border-radius: 5px;
+    background-color: #0c344d10;
+    padding: 10px;
+}
+.academic h4{
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+.skills ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.skills ul li{
+    list-style: none;
+    padding: 10px;
+    margin:  10px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: #010e162a; */
+    background-color: #0c344d10;
+    font-weight: 500;
+}
+.contact, .getInTouch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactLinks{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.contactLinks a{
+    padding: 15px;
+}
+
+.contactLinks a img{
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+}
+.getInTouch form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+input[type = email],input[type=text],.submitBtn,textarea{
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #0c344d10;
+    border: none;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    border-radius: 5px;
+
+}
+
+::placeholder,.submitBtn{
+    font-size: 17px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #0c344d;
+}
+@media only screen and (max-width: 700px){
+    .intro p{
+        text-align: center;
+    }
+    .academic{
+        flex-basis: 100%;
+        padding:  10px;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .getInTouch p{
+        text-align: center;
+    }
+    .getInTouch form{
+        width: 100%;
+    }
+}
+
+
+

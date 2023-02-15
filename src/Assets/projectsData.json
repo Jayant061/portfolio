@@ -1,0 +1,50 @@
+[
+    {
+        "ProjectName":"Recipe Book",
+        "siteLink":"https://musical-melba-d13e25.netlify.app/",
+        "repoLink":"https://github.com/Jayant061/Recipe-Book",
+        "projectDescription":[
+            "Recipe Book is a MERN full Stack user friendly website where user can find and save their favourite recipes.",
+            "Tech used: React Redux APIs MongoDB Express Node & many more..."
+        ]
+    },
+    {
+        "ProjectName":"Hackathon Organizer Dashboard",
+        "siteLink":"https://musical-melba-d13e25.netlify.app/",
+        "repoLink":"https://github.com/Jayant061/Dphi-Source-Code",
+        "projectDescription":[
+            "Dashboard alows the client to create update & even delete the Hackathon with least web traffic experience.",
+            "Tech used: ReactJs JavaScript & many more...."
+        ]
+    },
+    {
+        "ProjectName":"Shopping Cart Page",
+        "siteLink":"https://eloquent-flan-7aa197.netlify.app/",
+        "repoLink":"https://github.com/Jayant061/Cart-Page",
+        "projectDescription":[
+            "Cart page is a user friendly simple interface site where user can add reduce the number of items. Also can remove the items.",
+            "Image shown for the items may not match with item name beacuse image is choosen randomly from image json",
+            "Use PIN as 560066, 560067 & 560068 to interact more with page.",
+            "Tech used: ReactJs JavaScript & many more"
+        ] 
+    },
+    {
+        "ProjectName":"Redtape Website",
+        "siteLink":"https://jayant061.github.io/RedTapeWebSite/",
+        "repoLink":"https://github.com/Jayant061/RedTapeWebSite",
+        "projectDescription":[
+            "Redtape provides many different type of workout outfits. Along with its decent iterface.",
+            "User can select the item and also add the item to cart.",
+            "Tech used: HTML,CSS, JavaScript & many more..."
+        ]
+    },
+    {
+        "ProjectName":"Leads Tracker Chrome Extension",
+        "siteLink":"https://jayant061.github.io/LeadsTracker/",
+        "repoLink":"https://github.com/Jayant061/LeadsTracker",
+        "projectDescription":[
+            "Leads Tracker helps the client to hold and track the progress of leads.",
+            "Tech used: HTML CSS JavaScript & many more..."
+        ]
+    }
+]
