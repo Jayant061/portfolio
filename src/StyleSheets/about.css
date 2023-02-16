@@ -144,8 +144,9 @@ textarea{
     }
     .popup{
         position: absolute;
+        z-index: 30;
         top: 15px;
-        right: 10px;
+        right: 5px;
         width: 90%;
         max-width: 300px;
         padding: 10px;
