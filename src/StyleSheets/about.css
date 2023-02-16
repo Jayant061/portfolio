@@ -3,10 +3,11 @@
     padding: 0;
 }
 .popup{
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    z-index: 10;
+    position: fixed;
+    transform:translateY(5vh);
+    z-index: 30;
+    right: 10px;
+    top: 0;
     display: flex;
     justify-content: space-between;
     width: 300px;
@@ -143,10 +144,11 @@ textarea{
         width: 100%;
     }
     .popup{
-        position: absolute;
+        position: fixed;
+        transform:translateY(5vh);
         z-index: 30;
-        top: 15px;
         right: 5px;
+        top: 0;
         width: 90%;
         max-width: 300px;
         padding: 10px;

@@ -55,10 +55,10 @@ export default function About() {
     })
   return (
     <>
-    <div className="popup" style={popupVisibility ? popupStyle:{display:"none"}}>
+         <div className="popup" style={popupVisibility ? popupStyle:{display:"none"}}>
         <p>{popupMessage}</p>
         <p onClick={()=>{setPopupVisibility(false)}} style={{cursor:"pointer",color:"#0c344d", fontWeight:"600",fontSize:"18px"}}>✖</p>
-    </div>
+        </div>
       <Nav />
       <div className="about" onClick={()=>{setPopupVisibility(false)}}>
         <div className="intro">

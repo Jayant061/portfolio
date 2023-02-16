@@ -1,10 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import myPic from "../Assets/pic2.jpg";
-import "../StyleSheets/preface.css";
-export default function StartPage(){
+import "../StyleSheets/home.css";
+export default function Home(){
     const navigate = useNavigate();
     return (
+        <div className="home">
         <div className="preface">
             <div className="text">
                 <h1 className="name">JAYANT<br/>THAKUR</h1>
@@ -12,8 +13,9 @@ export default function StartPage(){
                 <button className="exploreBtn" onClick={()=>{navigate("/Explore")}}>Explore<span className="rightArrow">➡</span></button>
             </div>
             <div className="picture">
-                <img src = {myPic}/>
+                <img src = {myPic} alt = ""/>
             </div>
+        </div>
         </div>
     )
 }
