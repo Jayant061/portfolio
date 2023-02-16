@@ -4,6 +4,7 @@ import "../StyleSheets/explore.css";
 import Nav from "./Nav";
 import github from "../Assets/github.png";
 import projectsData from "../Assets/projectsData.json"
+import Footer from "./Footer";
 
 const projectItems = projectsData;
 const projects = projectItems.map((item,index)=>{
@@ -42,6 +43,7 @@ export default function Explore() {
         <h2>PROJECTS</h2>
         {projects}
       </div>
+      <Footer />
     </div>
   );
 }

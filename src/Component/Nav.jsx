@@ -10,7 +10,6 @@ export default function Nav() {
   const location = useLocation();
   const navigate = useNavigate();
 const screenWidth = window.innerWidth;
-console.log(screenWidth);
 const [isBar,setIsBar] = useState(true);
 const navStyle = {
   position: "absolute",

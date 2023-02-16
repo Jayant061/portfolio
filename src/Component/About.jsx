@@ -5,15 +5,34 @@ import "../StyleSheets/about.css"
 import academicData from "../Assets/academicData.json"
 import github from "../Assets/github.png"
 import linkedin from "../Assets/linkedin.png"
+import emailjs from '@emailjs/browser';
+import Footer from "./Footer";
 
 export default function About() {
+    
     const [formData,setFormData] = useState({name:"",email:"",message:""});
     function handleChange(event){
         setFormData(prevFormData=>{return{...prevFormData,[event.target.name]:event.target.value}})
     }
-    function handleSubmit(event){
+    const [popupMessage,setPopupMessage] = useState();
+    const [popupVisibility,setPopupVisibility] = useState(false);
+    const [popupStyle,setPopupStyle] = useState({})
+
+     function handleSubmit(event){
         event.preventDefault();
-        console.log(formData);
+        emailjs.sendForm('service_0quap5o', 'template_qabh1yn',event.target, '4gSKqkuNuFUL_yPpm')
+        .then((result) => {
+            // window.alert("Message has been sent Successfully")
+            setPopupMessage("Message has sent Successfully ✔");
+            setPopupStyle({color:"#0ebb02",border:"2px solid #0ebb02"})
+        }, (error) => {
+            // console.log(error.text);
+            setPopupMessage("Message sent failed ✖");
+            setPopupStyle({color:"#f44336", border:"2px solid #f44336"})
+
+
+        });
+        setPopupVisibility(true);
     }
     const academics = academicData.degrees;
     const academicContainer = academics.map((academic,index)=>{
@@ -36,8 +55,12 @@ export default function About() {
     })
   return (
     <>
+    <div className="popup" style={popupVisibility ? popupStyle:{display:"none"}}>
+        <p>{popupMessage}</p>
+        <p onClick={()=>{setPopupVisibility(false)}} style={{cursor:"pointer",color:"#0c344d", fontWeight:"600",fontSize:"18px"}}>✖</p>
+    </div>
       <Nav />
-      <div className="about">
+      <div className="about" onClick={()=>{setPopupVisibility(false)}}>
         <div className="intro">
         <h2>About Me</h2>
         <p>
@@ -72,15 +95,16 @@ export default function About() {
                 For service enquiries and collaborations please contact me below and leave a link 
                 to your website or portfolio. I am looking forward to hearing from you.
             </p>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} method = "post">
                 <input type="text" name="name" placeholder="Name"  onChange={handleChange} value = {formData.name} required/>
                 <input type="email" name="email" placeholder="Email"  onChange={handleChange} vlaue = {formData.email}required/>
-                <textarea name="message" cols="50" rows="10" placeholder="Message" onChange={handleChange} value = {formData.message} required/>
+                <textarea name="message" cols="50" rows="8" placeholder="Message" onChange={handleChange} value = {formData.message} required/>
                 <button className="submitBtn">Submit</button>
             </form>
 
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

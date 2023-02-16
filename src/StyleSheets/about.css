@@ -2,11 +2,24 @@
     margin: 0;
     padding: 0;
 }
+.popup{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding:10px;
+    background-color: #dee4e7;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
 .about{
     padding: 30px 50px;
     color: #0c344d;
     background-color: #0c344d10;
-
 }
 .about h2{
     margin-bottom: 10px;
@@ -17,7 +30,7 @@
 }
 .about p{
     font-size: 17px;
-    padding-bottom: 5px;
+    padding: 5px;
     color: rgb(2, 2, 88);
 }
 .intro, .careerHeading,.skills{
@@ -92,10 +105,18 @@ input[type = email],input[type=text],.submitBtn,textarea{
     background-color: #0c344d10;
     border: none;
     border-radius: 5px;
+    font-size: 17px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #0c344d;
 }
 textarea{
     resize: none;
     border-radius: 5px;
+    font-size: 17px;
+    font-family: "Inter";
+    font-weight: 500;
+    color: #0c344d;
 
 }
 
@@ -120,6 +141,15 @@ textarea{
     }
     .getInTouch form{
         width: 100%;
+    }
+    .popup{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+        margin: 0;
     }
 }
 
