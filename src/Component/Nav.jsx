@@ -24,38 +24,13 @@ const navStyle = {
   alignItems: "center",
   zIndex:"20"
 }
-// const[styleListExplore,setStyleListExplore] = useState({});
-// if(screenWidth<700 && location.pathname === "/Explore"){
-  // setStyleListExplore({
-    // color:"#FFD700"
-  // })
-// }
-// else if(screenWidth>700 && location.pathname === "/Explore"){
-  // setStyleListExplore({borderTop:"5px solid #0c344d",paddingTop:"7px"})
-// }
-// else{
-  // setStyleListExplore({});
-// }
-// const[styleListAbout,setStyleListAbout] = useState();
-// if(screenWidth<700 && location.pathname === "/About"){
-  // setStyleListAbout({
-    // color:"#FFD700"
-  // })
-// }
-// else if(screenWidth>700 && location.pathname === "/About"){
-  // setStyleListAbout({borderTop:"5px solid #0c344d",paddingTop:"7px"})
-// }
-// else{
-  // setStyleListAbout({});
-// }
-
 function getIsBar(){
   setIsBar(prevBar=>{return !prevBar});
 }
   return (
       <nav>
         <div className="logo">
-          <h2>JAYANT THAKUR</h2>
+          <h2 onClick={()=>{navigate("/")}}>JAYANT THAKUR</h2>
         </div>
         <div className="items">
           <img  className = "bars"src={isBar?Bars:XMark} alt="" style ={screenWidth>700?{display:"none"}:!isBar?{backgroundColor:"#2ba0e9"}:{}} onClick = {getIsBar}/>

@@ -1,0 +1,20 @@
+{
+    "degrees":[
+            {
+                "programme":"M.Sc.",
+                "stream":"Chemistry",
+                "instituteName":"Bhupendra Narayan Mandal University, Madhepura, Bihar",
+                "year":"2016"
+            },
+            {
+                "programme":"B.Sc.",
+                "stream":"Chemistry",
+                "instituteName":"Bhupendra Narayan Mandal University, Madhepura, Bihar",
+                "year":"2014"
+            }
+        
+    ],
+    "skills":[
+        "Problem Solving","Classroom Management","Student engagement","Leadership","Flexibility"
+    ]
+}

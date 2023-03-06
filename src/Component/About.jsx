@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Nav from "./Nav";
 import "../StyleSheets/about.css"
 import academicData from "../Assets/academicData.json"
@@ -9,7 +9,9 @@ import emailjs from '@emailjs/browser';
 import Footer from "./Footer";
 
 export default function About() {
-    
+    useEffect(()=>{
+        document.title = "About | JAYANT THAKUR";
+    },[])
     const [formData,setFormData] = useState({name:"",email:"",message:""});
     function handleChange(event){
         setFormData(prevFormData=>{return{...prevFormData,[event.target.name]:event.target.value}})

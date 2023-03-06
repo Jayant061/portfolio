@@ -1,8 +1,10 @@
 import React from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import myPic from "../Assets/pic2.jpg";
 import "../StyleSheets/home.css";
 export default function Home(){
+    useEffect(()=>{document.title = "Home | JAYANT THAKUR"},[])
     const navigate = useNavigate();
     return (
         <div className="home">

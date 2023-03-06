@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 // import { useLocation } from "react-router-dom";
 import "../StyleSheets/explore.css";
 import Nav from "./Nav";
@@ -11,16 +12,16 @@ const projects = projectItems.map((item,index)=>{
   // liItems stands for texts used as project description.
   const liItems = item.projectDescription.map((list,index)=>{
     if(list.includes("Tech used")){
-    return(
-    <li key={index}><strong key={index}>{list}</strong></li>
-    )}else{
+      return(
+        <li key={index}><strong key={index}>{list}</strong></li>
+        )}else{
       return(
         <li key={index}>{list}</li>
-      )
-    }
-  })
-  return(
-    <>
+        )
+      }
+    })
+    return(
+      <>
       <div className="project" key={index + "a"}>
         <div className="links" key={index +"b"}>
         <a href={item.siteLink} target = "_blank" key={index+"c"}>{item.ProjectName}</a>
@@ -36,6 +37,7 @@ const projects = projectItems.map((item,index)=>{
 });
 
 export default function Explore() {
+  useEffect(()=>{document.title = "Explore | JAYANT THAKUR"},[])
   return (
     <div className="explore">
       <Nav />

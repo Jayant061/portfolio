@@ -15,6 +15,7 @@ nav{
     font-size: 30px;
     letter-spacing: 2px;
     padding:0 5px;
+    cursor: pointer;
 }
 .items{
     padding-right: 50px;

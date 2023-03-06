@@ -4,7 +4,9 @@ import './App.css';
 import Home from './Component/Home';
 import Explore from './Component/Explore';
 import About from './Component/About';
-
+// import Home from './Amar/Home';
+// import Explore from './Amar/Explore';
+// import About from './Amar/About';
 function App() {
 
   return (

@@ -1,0 +1,19 @@
+{
+    "Works":[
+        {
+         "instituteName":"Bansod's Classes",
+         "InstituteAddress":"Aurangabad, Maharastra",
+         "timeline":"2021 - Present"
+        },
+        {
+            "instituteName":"The Qualifier (IIAS)",
+            "InstituteAddress":"Siliguri, W.B. & Purnea, Bihar",
+            "timeline":"2016-2021"
+        },
+        {
+            "instituteName":"Ranker's Academy Pvt. Ltd.",
+            "InstituteAddress":"Purnea, Bihar",
+            "timeline":"2015-2016"
+        }
+    ] 
+}
