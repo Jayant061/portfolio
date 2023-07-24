@@ -3,7 +3,6 @@ import { useState,useEffect } from "react";
 import Nav from "./Nav";
 import "../StyleSheets/about.css"
 import academicData from "../Assets/academicData.json"
-import loadingIcon from "../Assets/loading-loop.svg";
 import github from "../Assets/github.png"
 import linkedin from "../Assets/linkedin.png"
 import emailjs from '@emailjs/browser';
@@ -19,28 +18,23 @@ export default function About() {
     }
     const [popupMessage,setPopupMessage] = useState();
     const [popupVisibility,setPopupVisibility] = useState(false);
-    const [loading, setLoading] = useState(false);
     const [popupStyle,setPopupStyle] = useState({})
 
      function handleSubmit(event){
         event.preventDefault();
-        setLoading(true);
         emailjs.sendForm('service_0quap5o', 'template_qabh1yn',event.target, '4gSKqkuNuFUL_yPpm')
         .then((result) => {
             // window.alert("Message has been sent Successfully")
-            setPopupVisibility(true);
-            setLoading(false);
             setPopupMessage("Message has sent Successfully ✔");
             setPopupStyle({color:"#0ebb02",border:"2px solid #0ebb02"})
         }, (error) => {
             // console.log(error.text);
-            setLoading(false);
-            setPopupVisibility(true);
             setPopupMessage("Message sent failed ✖");
             setPopupStyle({color:"#f44336", border:"2px solid #f44336"})
 
 
         });
+        setPopupVisibility(true);
     }
     const academics = academicData.degrees;
     const academicContainer = academics.map((academic,index)=>{
@@ -107,9 +101,7 @@ export default function About() {
                 <input type="text" name="name" placeholder="Name"  onChange={handleChange} value = {formData.name} required/>
                 <input type="email" name="email" placeholder="Email"  onChange={handleChange} vlaue = {formData.email}required/>
                 <textarea name="message" cols="50" rows="8" placeholder="Message" onChange={handleChange} value = {formData.message} required/>
-                <button className="submitBtn">{!loading?"Submit":
-                <img src={loadingIcon} alt="loading Icon" style={{width:"20px"}}/>}
-                </button>
+                <button className="submitBtn">Submit</button>
             </form>
 
         </div>

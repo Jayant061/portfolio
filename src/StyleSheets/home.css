@@ -5,8 +5,8 @@
 .home{
     padding:0 40px;
     min-height: 100vh;
-    background: linear-gradient(0.25turn,#cfd9df , #e2ebf0);
-    /* background: linear-gradient(0.25turn, #62a6bf7e,#9ac4d27e); */
+    /* background: linear-gradient(0.25turn,#cfd9df , #e2ebf0); */
+    background: linear-gradient(0.25turn, #62a6bf7e,#9ac4d27e);
 }
 .preface{
     padding: 50px 0;
@@ -68,8 +68,8 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(0.25turn,#cfd9df , #e2ebf0);
-    /* background: linear-gradient(0.25turn, #62a6bf7e,#9ac4d27e); */
+    /* background: linear-gradient(0.25turn,#cfd9df , #e2ebf0); */
+    background: linear-gradient(0.25turn, #62a6bf7e,#9ac4d27e);
 }
    .picture{
     width: 100%;
