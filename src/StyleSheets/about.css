@@ -110,6 +110,7 @@ input[type = email],input[type=text],.submitBtn,textarea{
     font-family: "Inter";
     font-weight: 500;
     color: #0c344d;
+    outline: none;
 }
 textarea{
     resize: none;
