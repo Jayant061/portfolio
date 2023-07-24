@@ -1,10 +1,9 @@
 {"degrees":[
     {
-        "programme":"Metriculation",
-        "instituteName":"Bijendra Public School, Purnea Bihar",
-        "year":"2016 - 2017",
-        "score":"9.4/10",
-        "board":"CBSE"
+        "programme":"B.Tech",
+        "instituteName":"National Institute of Technology Kurukshetra, Haryana India",
+        "year":"2020 - present",
+        "score":"8.50/10"
     },
     {
         "programme":"Intermediate",
@@ -14,12 +13,13 @@
         "board":"CBSE"
     },
     {
-        "programme":"B.Tech",
-        "instituteName":"National Institute of Technology Kurukshetra, Haryana India",
-        "year":"2020 - present",
-        "score":"8.72/10"
+        "programme":"Metriculation",
+        "instituteName":"Bijendra Public School, Purnea Bihar",
+        "year":"2016 - 2017",
+        "score":"9.4/10",
+        "board":"CBSE"
     }
 ],
-    "skills":["HTML","CSS","JavaScript","ReactJS","NodeJS","ExpressJS","MongoDB","C++",
+    "skills":["HTML","CSS","JavaScript","ReactJS","NodeJS","ExpressJS","MongoDB","Firebase","C++",
                   "Data Structure & Algorithm","Github"]
 }

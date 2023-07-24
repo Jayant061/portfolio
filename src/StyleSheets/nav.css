@@ -20,6 +20,9 @@ nav{
 .items{
     padding-right: 50px;
 }
+.items .bars{
+    display: none;
+}
 .items ul{
     display: flex;
     justify-content: space-between;
@@ -49,14 +52,16 @@ nav{
     }
     .items{
         padding-right: 5px;
+        position: relative;
     }
     .items ul{
         display: none;
     }
-    .bars{
+    .items .bars{
+        display: inline-block;
         position: absolute;
-        right: 5px;
-        top: 20px;
+        right: 20px;
+        top: calc(50% - 20px);
         width: 40px;
         height: 40px;
         align-self: center;
