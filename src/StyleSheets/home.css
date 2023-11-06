@@ -5,8 +5,9 @@
 .home{
     padding:0 40px;
     min-height: 100vh;
-    background: linear-gradient(0.25turn,#cfd9df , #e2ebf0);
-    /* background: linear-gradient(0.25turn, #62a6bf7e,#9ac4d27e); */
+    /* background: linear-gradient(to right,#64c0fa 25% , #cee3ee 75%); */
+    background: radial-gradient(#eef3f3,#c9f3ed);
+    perspective: 10px;
 }
 .preface{
     padding: 50px 0;
@@ -16,7 +17,10 @@
 }
 .text{
     flex-basis: 50%;
-
+}
+.text h1{
+    text-shadow: 5px 2px 2px #c0c0c0;
+    transform: translateZ(-10px);
 }
 .picture{
     flex-basis: 50%;
@@ -24,7 +28,7 @@
 }
 .picture img{
    width: 100%;
-   max-width:450px;
+   max-width:350px;
     border-radius: 50%;
 }
 .name{
@@ -45,12 +49,12 @@
     cursor: pointer;
     border: none;
     color: #0c344d;
-    transition: 0.3s;
+    transition: 0.5s;
     border-radius: 5px;
+    border: 2px solid #13395b;
 
 }
 .exploreBtn:hover{
-    border: 2px solid white;
     background-color: #0c344d;
     color: white;
 }

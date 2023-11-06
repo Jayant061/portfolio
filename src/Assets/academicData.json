@@ -1,25 +1,53 @@
-{"degrees":[
+{
+  "degrees": [
     {
-        "programme":"B.Tech",
-        "instituteName":"National Institute of Technology Kurukshetra, Haryana India",
-        "year":"2020 - present",
-        "score":"8.50/10"
+      "programme": "B.Tech",
+      "instituteName": "National Institute of Technology Kurukshetra, Haryana India",
+      "year": "2020 - present",
+      "score": "8.50/10"
     },
     {
-        "programme":"Intermediate",
-        "instituteName":"India Public School, Purnea Bihar",
-        "year":"2018 - 2019",
-        "score":"75.4 %",
-        "board":"CBSE"
+      "programme": "Intermediate",
+      "instituteName": "India Public School, Purnea Bihar",
+      "year": "2018 - 2019",
+      "score": "75.4 %",
+      "board": "CBSE"
     },
     {
-        "programme":"Metriculation",
-        "instituteName":"Bijendra Public School, Purnea Bihar",
-        "year":"2016 - 2017",
-        "score":"9.4/10",
-        "board":"CBSE"
+      "programme": "Metriculation",
+      "instituteName": "Bijendra Public School, Purnea Bihar",
+      "year": "2016 - 2017",
+      "score": "9.4/10",
+      "board": "CBSE"
     }
-],
-    "skills":["HTML","CSS","JavaScript","ReactJS","NodeJS","ExpressJS","MongoDB","Firebase","C++",
-                  "Data Structure & Algorithm","Github"]
+  ],
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "ReactJS",
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "Firebase",
+    "C++",
+    "Data Structure & Algorithm",
+    "Github"
+  ],
+  "workExperience": [
+    {
+        "company":"Excellence Technology",
+        "role":"Software Development intern",
+        "range":"January 2023 - June 2023",
+        "description":[
+            " Conceptualized and built a dynamic admin dashboard utilizing the MERN (MongoDB, Express.js, React, Node.js) stack by coordinating with the cross functional team of 5 members",
+            "Engineered robust search, filter, and sorting functionalities within the admin dashboard. ",
+            "Implemented the Context API for flawless global state management across the frontend, enhancing user experience and maintaining consistent data synchronization.",
+            "Established a reliable backend environment using Node.js and Express.js, optimizing performance and enabling rapid communication between frontend and database.",
+            "Played a pivotal role in the development lifecycle, actively collaborating with cross-functional teams.",
+            " Conducted software analysis, programming, testing and debugging. Fixed production and non-production application issues."
+        ]
+
+    }
+  ]
 }

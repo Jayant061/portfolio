@@ -1,33 +1,27 @@
-[
+[{
+"ProjectName":"Jayantique Fashion store",
+"siteLink":"https://jayantique.onrender.com",
+"repoLink":"https://github.com/Jayant061/Jayantique",
+"projectDescription":["Utilizing advanced algorithms, the app offers intelligent product recommendations based on user preferences and browsing behaviors.",
+"Utilizes Context API for seamless global state management, leading to efficient data sharing across components.",
+"This application allows users to browse and purchase a wide range of antique products",
+"Tech used: React.js, Node.js, Express.js, MongoDB, Stripe & many more...",
+"Currently actively engaged in the ongoing development and improvement of the project, with the latest code updates as of November 2023."
+]
+},
     {
-        "ProjectName":"Recipe Book",
-        "siteLink":"https://musical-melba-d13e25.netlify.app/",
-        "repoLink":"https://github.com/Jayant061/Recipe-Book",
+        "ProjectName":"JTalk Chat Application",
+        "siteLink":"https://jtalk.onrender.com/",
+        "repoLink":"https://github.com/Jayant061/chat-app",
         "projectDescription":[
-            "Recipe Book is a MERN full Stack user friendly website where user can find and save their favourite recipes.",
-            "Tech used: React Redux APIs MongoDB Express Node & many more..."
+            "Synergizes the dynamic capabilities of React.js with Firebase's real-time data synchronization, delivering a powerful and efficient chat application.",
+            "Implements Context API for state management, promoting smooth interactions and data sharing across components.",
+            " Utilizes Firebase's real-time database to ensure instantaneous messaging",
+            "Completed the final phase of development for the project, implemented the last code changes and enhancements in July 2023.",
+            "Tech used: Firebase, React.js, Context APIs & many more..."
         ]
     },
-    {
-        "ProjectName":"Hackathon Organizer Dashboard",
-        "siteLink":"https://amazing-chebakia-472dc4.netlify.app/",
-        "repoLink":"https://github.com/Jayant061/Dphi-Source-Code",
-        "projectDescription":[
-            "Dashboard alows the client to create update & even delete the Hackathon with least web traffic experience.",
-            "Tech used: ReactJs JavaScript & many more...."
-        ]
-    },
-    {
-        "ProjectName":"Shopping Cart Page",
-        "siteLink":"https://eloquent-flan-7aa197.netlify.app/",
-        "repoLink":"https://github.com/Jayant061/Cart-Page",
-        "projectDescription":[
-            "Cart page is a user friendly simple interface site where user can add reduce the number of items. Also can remove the items.",
-            "Image shown for the items may not match with item name beacuse image is choosen randomly from image json",
-            "Use PIN as 560066, 560067 & 560068 to interact more with page.",
-            "Tech used: ReactJs JavaScript & many more"
-        ] 
-    },
+    
     {
         "ProjectName":"Redtape Website",
         "siteLink":"https://jayant061.github.io/RedTapeWebSite/",
@@ -35,6 +29,7 @@
         "projectDescription":[
             "Redtape provides many different type of workout outfits. Along with its decent iterface.",
             "User can select the item and also add the item to cart.",
+            "Completed the final phase of development for the project, implemented the last code changes and enhancements in November 2021.",
             "Tech used: HTML,CSS, JavaScript & many more..."
         ]
     },
@@ -44,6 +39,7 @@
         "repoLink":"https://github.com/Jayant061/LeadsTracker",
         "projectDescription":[
             "Leads Tracker helps the client to hold and track the progress of leads.",
+            "Completed the final phase of development for the project, implemented the last code changes and enhancements in July 2022.",
             "Tech used: HTML CSS JavaScript & many more..."
         ]
     }

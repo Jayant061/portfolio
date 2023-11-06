@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import myPic from "../Assets/pic2.jpg";
+import myPic from "../Assets/jayant.png";
 import "../StyleSheets/home.css";
 export default function Home(){
     useEffect(()=>{document.title = "Home | JAYANT THAKUR"},[])

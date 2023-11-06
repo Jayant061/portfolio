@@ -60,7 +60,23 @@ export default function About() {
         return(
             <li className="skill" key={index}>{skill}</li>
         )
-    })
+    });
+    const workExperiences = academicData?.workExperience?.map((experience, index) => {
+        const description = experience?.description?.map((desc, ind) => {
+            return (
+                <li className="desc" key={`experience_${index}_desc_${ind}`}>{desc}</li>
+            );
+        });
+        return (
+            <div className="workExperience" key={`experience_${index}`}>
+                <h3>{experience.company}</h3>
+                <h4>{experience?.role}</h4>
+                <p>{experience?.range}</p>
+                <div className="descriptions">{description}</div>
+            </div>
+        );
+    });
+    
   return (
     <>
          <div className="popup" style={popupVisibility ? popupStyle:{display:"none"}}>
@@ -77,6 +93,12 @@ export default function About() {
           my knowledge and skills in project with strict adherence to achieving
           the organizational goals.
         </p>
+        </div>
+        <div className="workExperiences">
+            <h2>Prior Work Experience</h2>
+            <div className="experiences">
+            {workExperiences}
+            </div>
         </div>
         <div className="careerHeading">
         <h2>Academic Career</h2>
